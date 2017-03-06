@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Serenia Hills | Intiland</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- development -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!-- Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<!-- Script -->
+</head>
+<body>
+	<div class="container-fluid" id="serenia-hill">
+		<div class="row">
+			<div class="col-lg-12 wrap-logo">
+				<img src="assets/images/Intiland.png" alt="" class="img-responsive center-block intiland-logo pull-right">	
+			</div>
+			<div class="col-lg-12">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row container-image">
+						<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+						<!-- <ol class="carousel-indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+						</ol> -->
+					<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="active item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+					<!-- Carousel nav -->
+						<!-- a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+						<a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a> -->
+					</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-sm-12" id="unit-type">
+							<div class="triangle--1"></div>
+							<div class="triangle--3"></div>
+							<img src="assets/images/serenia-hill.png" alt="" class="img-responsive center-block">	
+							<ul class="center-block">
+								<li>
+									<p class="text-left">Standart</p>
+									<p><img src="https://d3p0bla3numw14.cloudfront.net/assets/image/ic-luastanah.png" alt="">105 <i>
+									<strong>M<sup> 2</sup></p></strong></i>
+									<p><img src="https://d3p0bla3numw14.cloudfront.net/assets/image/ic-luasbangunan.png" alt="">105 <i>
+									<strong>M<sup> 2</sup></p></strong></i>
+								</li>
+								<li>
+									<p class="text-left">Optional</p>
+									<p><img src="https://d3p0bla3numw14.cloudfront.net/assets/image/ic-luastanah.png" alt="">105 <i>
+									<strong>M<sup> 2</sup></p></strong></i>
+									<p><img src="https://d3p0bla3numw14.cloudfront.net/assets/image/ic-luasbangunan.png" alt="">105 <i>
+									<strong>M<sup> 2</sup></p></strong></i>
+								</li>
+							</ul>
+							<div class="col-sm-12 content-detail">
+								<h1 class="text-left pull-left"><small>Type</small><br>Olive</h1>
+								<a href="assets/detil-page/" class="pull-right"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+								<a href="" class="pull-right"><i class="fa fa-video-camera fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+				
+			</div>
+		</div>
+	</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+            resizeContent();
+
+            $(window).resize(function() {
+                resizeContent();
+            });
+        });
+		function resizeContent() {
+            $height = $(window).height()-86;
+            $('div.container-image').height($height);
+        };
+        function resizeContent() {
+            $height = $(window).height()-86;
+            $('div.item').height($height);
+        };
+        function resizeContent() {
+            $height = $(window).height();
+            $('body div#serenia-hill').height($height);
+        };
+        function resizeContent() {
+            $height = $(window).height()-86;
+            $('#unit-type').height($height);
+        };
+        $('.carousel').carousel();
+</script>
+</body>
+</html>

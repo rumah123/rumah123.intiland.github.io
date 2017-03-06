@@ -1,0 +1,190 @@
+@intiland-color-1 : darken(#dbd8c6, 30%);
+@intiland-color-2 : #7f745e;
+@intiland-color-3 : darken(#dbd8c6, 10%);
+.intiland-logo{
+	max-width: 100px;
+	width: 100%;
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.back-btn{
+	position: absolute;
+	top: 30px;
+	bottom: 0;
+}
+.back-btn .fa{
+	padding-right: 10px;
+}
+.wrap-logo{
+	overflow: auto;
+}
+#unit-type{
+	background-color: #dbd8c6;
+	overflow: auto;
+}
+#unit-type > img{
+	position: absolute;
+	top: 55px;
+	left: 0;
+	right: 0;
+}
+#unit-type .content-detail{
+	padding: 0!important;
+}
+#unit-type .content-detail > a{
+	margin: 40px 0 0;
+	transition: all 0.2s linear;
+	color: @intiland-color-1;
+}
+#unit-type .content-detail > a:nth-child(2){
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#unit-type div h1,
+#unit-type div h1 small{
+	color: @intiland-color-1;
+}
+#unit-type div h1{
+	padding-left: 15px;
+}
+#unit-type .content-detail{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#unit-type ul {
+	padding: 0;
+	position: absolute;
+	bottom: 100px;
+}
+#unit-type ul li{
+	display: inline-table;
+	margin-top: 30px;
+	padding: 0 35px;
+}
+#unit-type ul li:first-child{
+	border-right: 3px solid @intiland-color-3 ;
+}
+#unit-type ul li p{
+	font-size: 14px;
+	font-weight: normal;
+	color: @intiland-color-1;
+}
+#unit-type ul li p img{
+	width: 30px;
+}
+.container-image{
+	height: 682px;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.item:nth-child(1) {
+  background: url(http://1.bp.blogspot.com/-boZKwH5nb6w/VjnIBj6bDnI/AAAAAAAAK_Y/LOr4CDQiO1M/s1600/Venture%2BTimur%2BTampak%2BDepan.jpg)no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.item:nth-child(2) {
+  background: url(http://kkcdn-static.kaskus.co.id/images/2012/12/01/4959379_20121201014052.jpg)no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.item:nth-child(3) {
+  background: url(https://d3p0bla3numw14.cloudfront.net/images/brand-page/tipe-unit/brand-page-tipe-unit-olive-st-1476781495.jpg) no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+}
+.triangle--1, .triangle--3 {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+}
+
+.triangle--1 {
+    border-top-color: @intiland-color-3;
+    top: 335px;
+    left: 179px;
+    z-index: 2;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border-width: 120px 120px 0;
+}
+.triangle--3 {
+	border-top-color: @intiland-color-1;
+    top: 270px;
+    z-index: 4;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+    border-width: 160px 160px 0;
+    border-left-color: @intiland-color-1;
+}
+@media (min-width: 1025px) and (max-width: 1920px) {
+	.carousel, .carousel-inner, .carousel-inner .item{
+	    height: 100%;
+	    min-height: 100%;
+	    height: 994px;
+	}
+	.triangle--1 {
+	    border-top-color: #c7c3a7;
+	    top: 420px;
+	    left: 315px;
+	    z-index: 2;
+	    transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	    -webkit-transform: rotate(-45deg);
+	    border-width: 240px 240px 0;
+	}
+	.triangle--3 {
+    border-top-color: #a09868;
+    top: 320px;
+    z-index: 4;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+    border-width: 290px 290px 0;
+    border-left-color: #a09868;
+}
+}
